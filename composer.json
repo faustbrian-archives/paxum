@@ -1,7 +1,7 @@
 {
     "name": "faustbrian/paxum-php-client",
     "description": "A Paxum Client for PHP",
-    "keywords": ["api", "faustbrian", "faustbrian-paxum", "paxum", "Brian Faust", "faustbrian"],
+    "keywords": ["api", "paxum", "Brian Faust", "faustbrian"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
