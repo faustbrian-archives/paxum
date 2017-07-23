@@ -39,8 +39,8 @@ class Client
     public function __construct(string $sharedSecret, string $email)
     {
         $this->sharedSecret = $sharedSecret;
-        $this->email        = $email;
-        $this->key          = md5("{$sharedSecret}{$email}");
+        $this->email = $email;
+        $this->key = md5("{$sharedSecret}{$email}");
     }
 
     /**
