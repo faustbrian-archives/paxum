@@ -5,15 +5,15 @@ declare(strict_types=1);
 /*
  * This file is part of Paxum PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Paxum;
+namespace Plients\Paxum;
 
-use BrianFaust\Http\Http;
+use Plients\Http\Http;
 
 class Client
 {
@@ -50,13 +50,13 @@ class Client
      *
      * @param string $name
      *
-     * @return \BrianFaust\Paxum\API\AbstractAPI
+     * @return \Plients\Paxum\API\AbstractAPI
      */
     public function api(string $name): API\AbstractAPI
     {
         $client = Http::withBaseUri("https://www.paxum.com/payment/api/paymentAPI.php?key={$key}&fromEmail={$email}");
 
-        $class = "BrianFaust\\Paxum\\API\\{$name}";
+        $class = "Plients\\Paxum\\API\\{$name}";
 
         return new $class($client);
     }
